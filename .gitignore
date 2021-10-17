@@ -1,0 +1,5 @@
+tittler_env/
+*.sqlite3
+__pycache__
+.env
+db.cnf
