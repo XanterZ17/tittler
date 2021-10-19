@@ -1,0 +1,9 @@
+{% extends 'titles/base.html' %}
+
+{% block content %}
+
+{% for anime_singular in anime%}
+    <p><a href=''>{{anime_singular.name}}</a></p>
+{% endfor %}
+
+{% endblock content %}
