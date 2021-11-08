@@ -19,3 +19,9 @@ def anime(request):
     anime = Anime.objects.all()
     context = {'anime': anime}
     return render(request, 'titles/anime.html', context)
+
+def anime_page(request, anime_name):
+    """Страница выбранного аниме"""
+    anime = Anime.objects.get(name=anime_name)
+    context = {'anime': anime}
+    return render(request, 'titles/anime_page.html', context)

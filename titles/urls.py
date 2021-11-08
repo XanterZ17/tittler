@@ -13,5 +13,5 @@ urlpatterns = [
     # Список аниме
     path('titles/anime/', views.anime, name='anime'),
     # Страница аниме
-    #path('titles/anime/<str:')
+    path('titles/anime/<str:title_name>/', views.anime_page, name='anime_page'),
 ]
